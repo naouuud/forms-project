@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly to Outer Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="/home/naouuud/my-websites/practice/forms/odin-lined.png" alt="Odin Logo">
+            <h1>LUOKOSM</h1>
+        </div>
+        <p class="attribution">Photo by <a href="https://unsplash.com/@zenz" target="_blank">Vincenzo Malagoli</a> on <a
+                href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </div>
+    <div class="right">
+        <div class="intro">
+            <p>Ever wondered what awaits in the cosmos?<br>Find out. Apply below to visit space:</p>
+        </div>
+        <div class="application-form">
+            <form action="" method="get" id="application-form">
+                <div class="form-row">
+                    <div class="input-label-pair">
+                        <label for="first-name">First Name <span aria-label="required">(required)</span></label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
+                            required maxlength="100" pattern="[A-Za-z- ]+">
+                    </div>
+                    <div class="input-label-pair">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"
+                            maxlength="100">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-label-pair">
+                        <label for="gender">Gender</label>
+                        <input type="text" name="gender" id="gender" list="gender-list" autocomplete="off"
+                            maxlength="50">
+                    </div>
+                    <datalist id="gender-list">
+                        <option>Cis-Female</option>
+                        <option>Trans-Female</option>
+                        <option>Cis-Male</option>
+                        <option>Trans-Male</option>
+                        <option>Non-binary</option>
+                    </datalist>
+                    <div class="input-label-pair">
+                        <label for="age">Age</label>
+                        <input type="number" min="18" max="100" id="age" name="age">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-label-pair">
+                        <label for="email">Email <span aria-label="required">(required)</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address"
+                            autocomplete="off" required maxlength="50">
+                    </div>
+                    <div class="input-label-pair">
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Enter your phone number" maxlength="20"
+                            pattern="^[0-9]*[0-9.\- ()]*[0-9]$">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-label-pair">
+                        <label for="password">Password <span aria-label="required">(required)</span></label>
+                        <input type="password" id="password" name="password" placeholder="Choose a password" required
+                            minlength="8" maxlength="20">
+                    </div>
+                    <div class="input-label-pair">
+                        <label for="confirm-password">Confirm Password <span
+                                aria-label="required">(required)</span></label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                            placeholder="Enter your password again" required minlength="8" maxlength="20">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <input type="submit" form="application-form" value="Create Account">
+        <input type="reset" form="application-form" value="Start Over">
+    </div>
+</body>
+
+</html>

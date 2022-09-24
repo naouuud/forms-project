@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Karla&family=Nunito&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.left {
+    min-height: 768px;
+    background-image: url(/home/naouuud/my-websites/practice/forms/forms-background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: -370px;
+}
+
+.left .logo {
+    display: flex;
+    margin-top: 260px;
+    padding: 10px 45px 10px 40px;
+    background-color: rgba(199, 91, 29, 0.13);
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin-top: 10px;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 70px;
+}
+
+.left .attribution {
+    position: fixed;
+    bottom: 0;
+    margin-left: 140px;
+    color: rgb(228, 154, 112);
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+}
+
+.left .attribution a:link,
+.left .attribution a:visited {
+    color: rgb(228, 154, 112);
+}
+
+.left .attribution a:active {
+    color: rgb(235, 222, 214);
+}
+
+.right {
+    width: 100vw;
+    background-color: rgb(240, 220, 209);
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+}
+
+.right .intro {
+    width: 480px;
+    margin: 120px 0 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(17, 18, 22);
+    line-height: 30px;
+}
+
+.right p {
+    margin-bottom: 20px;
+}
+
+.right .application-form {
+    padding: 40px 20px 10px 40px;
+    background-color: antiquewhite;
+}
+
+.right .application-form .form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.right .application-form .form-row .input-label-pair {
+    width: 300px;
+}
+
+.right .application-form .form-row label {
+    display: block;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.right .application-form .form-row input {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    outline: none;
+}
+
+.right .application-form .form-row input:focus,
+.right .application-form .form-row input:hover {
+    border: 1px solid rgba(73, 73, 88, 0.377);
+    box-shadow: 1px 1px rgba(73, 73, 88, 0.575);
+}
+
+.right .application-form .form-row input:invalid {
+    border: 1px solid rgba(255, 72, 72, 0.897);
+}
+
+.right .application-form .form-row input:focus:invalid,
+.right .application-form .form-row input:hover:invalid {
+    border: 1px solid rgba(248, 52, 52, 0.603);
+    box-shadow: 1px 1px rgba(248, 52, 52, 0.699);
+}
+
+.right .application-form .form-row input::placeholder,
+.right .application-form .form-row label span  {
+    color: rgb(134, 133, 133);
+}
+
+.right input[type='submit'],
+.right input[type='reset'] {
+    font: inherit;
+    color: white;
+    font-size: 15px;
+    margin: 30px 0 0 40px;
+    padding: 6px 8px 8px 8px;
+    width: 20%;
+    background-color: rgb(218, 161, 111);
+    border: 1px solid rgb(218, 161, 111);
+    border-radius: 6px;
+    box-shadow: 1px 2px rgb(199, 91, 29)
+}
+
+.right input[type='submit']:active,
+.right input[type='reset']:active {
+    background-color: rgb(199, 91, 29);
+    border: 1px solid rgb(199, 91, 29);
+    box-shadow: none;
+}
